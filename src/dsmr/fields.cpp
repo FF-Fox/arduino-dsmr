@@ -424,8 +424,13 @@ constexpr char water_equipment_id::name[];
 constexpr ObisId water_valve_position::id;
 constexpr char water_valve_position::name[];
 
+/* _NL */
 constexpr ObisId water_delivered::id;
 constexpr char water_delivered::name[];
+
+/* _BE */
+constexpr ObisId water_delivered_be::id;
+constexpr char water_delivered_be::name[];
 
 constexpr ObisId sub_device_type::id;
 constexpr char sub_device_type::name[];
