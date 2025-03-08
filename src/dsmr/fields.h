@@ -560,6 +560,9 @@ namespace dsmr
  * (Note: 4.x spec has "hourly meter reading") */
     DEFINE_FIELD(water_delivered, TimestampedFixedValue, ObisId(0, WATER_MBUS_ID, 24, 2, 1), TimestampedFixedField,
                  units::m3, units::dm3);
+    /* _BE */
+    DEFINE_FIELD(water_delivered_be, TimestampedFixedValue, ObisId(0, WATER_MBUS_ID, 24, 2, 3), TimestampedFixedField,
+                 units::m3, units::dm3);
 
     /* Device-Type */
     DEFINE_FIELD(sub_device_type, uint16_t, ObisId(0, SUB_MBUS_ID, 24, 1, 0), IntField, units::none);
